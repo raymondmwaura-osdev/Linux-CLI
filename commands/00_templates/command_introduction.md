@@ -4,7 +4,7 @@
 
 Deliver a high-level operational summary of what the command enables within a Linux environment. Articulate the core business value of the command’s functionality and its strategic relevance in systems operations.
 
-Outline the primary purpose of the command and the scenarios in which it is typically deployed. Frame the command’s role within the broader Unix philosophy and workflow orchestration.
+Outline the primary purpose of the command and the scenarios in which it is typically deployed.
 
 ---
 
