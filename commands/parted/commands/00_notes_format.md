@@ -1,4 +1,4 @@
-## `<command>` e.g. `print`
+# `<command>` e.g. `print`
 
 Concise academic description of the command’s intent and primary effect.
 
@@ -6,7 +6,7 @@ Concise academic description of the command’s intent and primary effect.
 
 ## Formal syntax
 
-Exact syntax variants (interactive vs non-interactive), required operands and optional operands, and canonical order. Use BNF-like notation if useful.
+Exact syntax variants (interactive vs non-interactive), required operands and optional operands, and canonical order.
 
 ---
 
