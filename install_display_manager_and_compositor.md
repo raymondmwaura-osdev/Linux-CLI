@@ -1,9 +1,9 @@
 ```sh
 # Install a display manager.
-sudo pacman -S lightdm lightdm-gtk-greeter
+sudo pacman -S greetd
 
 # Install a compositor/window manager.
-sudo pacman -S sway waybar
+sudo pacman -S sway swaybg waybar
 
 # Install GPU drivers.
 sudo pacman -S mesa intel-media-driver
@@ -21,9 +21,4 @@ Exec=sway
 Type=Application
 ```
 
-Set default greeter for lightdm in `/etc/lightdm/lightdm.conf`:
-
-```ini
-[Seat:*]
-greeter-session=lightdm-gtk-greeter
-```
+---
