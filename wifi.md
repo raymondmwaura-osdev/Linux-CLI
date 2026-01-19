@@ -44,3 +44,38 @@ systemctl enable --now systemd-resolved
 ```
 
 ---
+
+### rfkill
+
+Sometimes, the network interface like `wlan0` can suddenly go DOWN. This can be caused when rfkill is blocking the device. To test if rfkill is blocking the device, run these commands:
+
+```sh
+ip link set wlan0 up
+# Expected output: RTNETLINK answers: Operation not possible due to RF-kill
+
+rfkill list
+# Expected output:
+#0: hci0: Bluetooth
+#        Soft blocked: yes
+#        Hard blocked: no
+#1: phy0: Wireless LAN
+#        Soft blocked: yes
+#        Hard blocked: no
+```
+
+To fix this, run:
+
+```sh
+rfkill unblock wifi
+
+ip link wlan0 up
+# If it doesn't go up automatically.
+```
+
+Confirm:
+
+```sh
+ip link show wlan0
+```
+
+---
